@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Operations</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>General Bank</h1>
+            <nav>
+                <ul>
+                    <li><a href="#upi">UPI</a></li>
+                    <li><a href="#credit-card">Credit Card</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="upi">
+            <h2>UPI Transactions</h2>
+            <div class="operations">
+                <button onclick="deposit()">Deposit</button>
+                <button onclick="withdraw()">Withdraw</button>
+                <button onclick="checkBalance()">Check Balance</button>
+            </div>
+        </section>
+
+        <section id="credit-card">
+            <h2>Credit Card Operations</h2>
+            <div class="operations">
+                <button onclick="purchase()">Make a Purchase</button>
+                <button onclick="payBill()">Pay Bill</button>
+                <button onclick="checkLimit()">Check Limit</button>
+                <button onclick="viewTransactions()">View Transactions</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
